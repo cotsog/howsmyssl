@@ -53,6 +53,10 @@ export PATH=${HOME}/google-cloud-sdk/bin:$PATH
 
 auth_gcloud
 
+echo "GCLOUD again"
+ls -l $HOME/google-cloud-sdk
+echo "GCLOUD again was ^"
+
 docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS || die "unable to login"
 
 REPO=jmhodges/howsmyssl
