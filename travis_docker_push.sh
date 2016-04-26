@@ -30,6 +30,9 @@ ls -l ${HOME}/google-cloud-sdk/
 echo "GCLOUD"
 
 function auth_gcloud() {
+  # This if-statement is mostly useless but for some reason only the top-level
+  # google-cloud-sdk directory is getting stored in TravisCI and I don't know
+  # why.
   if [ ! -d ${HOME}/google-cloud-sdk ]; then
     cd $HOME
     export CLOUDSDK_CORE_DISABLE_PROMPTS=1

@@ -13,10 +13,6 @@ branches:
     - /^test_/
     - /^test-/
 
-cache:
-  directories:
-    - $HOME/google-cloud-sdk
-
 env:
   - GOARCH=amd64 GOOS=linux
 
